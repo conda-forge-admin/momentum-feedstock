@@ -3,7 +3,7 @@ new file mode 100644
 index 0000000..8f79c0e
 --- /dev/null
 +++ setup.py
-@@ -0,0 +1,128 @@
+@@ -0,0 +1,126 @@
 +#!/usr/bin/env python3
 +# Copyright (c) Meta Platforms, Inc. and affiliates.
 +#
@@ -121,8 +121,6 @@ index 0000000..8f79c0e
 +        ext_modules=[
 +            CMakeExtension("geometry", sourcedir=ROOT_DIR),
 +            CMakeExtension("marker_tracking", sourcedir=ROOT_DIR),
-+            CMakeExtension("quaternion", sourcedir=ROOT_DIR),
-+            CMakeExtension("skel_state", sourcedir=ROOT_DIR),
 +        ],
 +        cmdclass={
 +            "build_ext": CMakeBuild,
